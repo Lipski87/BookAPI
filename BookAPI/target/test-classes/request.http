@@ -1,0 +1,45 @@
+###
+
+GET http://localhost:8080/books
+
+###
+
+POST http://localhost:8080/books
+Content-Type: application/json
+
+{
+  "isbn": "test1234",
+  "title": "Testowa",
+  "publisher": "Test",
+  "type": "testing",
+  "author": "Test Test"
+}
+
+###
+
+GET http://localhost:8080/books/3
+
+###
+
+DELETE http://localhost:8080/books/4
+
+###
+
+# curl -X PUT -i -H "Content-Type: application/json" -d
+#'{"id":2,"isbn":"32222","title":"Thinking in C#",  "publisher":"IT Books","type":"programming", "author":"Bruce Eckel"}'
+# http://localhost:8080/books
+PUT http://localhost:8080/books
+Content-Type: application/json
+
+{
+  "id": 4,
+  "isbn": "32222",
+  "title": "Thinking in C#",
+  "publisher": "IT Books",
+  "type": "programming",
+  "author": "Bruce Eckel"
+}
+
+###
+
+
